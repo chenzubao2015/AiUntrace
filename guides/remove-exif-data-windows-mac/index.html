@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>如何在 Windows 和 Mac 上清除照片 EXIF 数据 | AiUntrace</title>
+    <meta name="description" content="使用 Windows 或 Mac 内置工具清除照片 EXIF 与位置数据，或通过浏览器本地重绘方案一次性清除所有元数据块。" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#080808" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F7F7F9" media="(prefers-color-scheme: light)" />
+    <script>(function(){try{var s=localStorage.getItem("aiuntrace-theme");var t=s==="light"||s==="dark"?s:window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";if(t==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}})();</script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="AiUntrace" />
+    <meta property="og:title" content="如何在 Windows 和 Mac 上清除照片 EXIF 数据" />
+    <meta property="og:description" content="使用 Windows 或 Mac 内置工具清除照片 EXIF 与位置数据，或通过浏览器本地重绘方案一次性清除所有元数据块。" />
+    <meta property="og:image" content="/thumb.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap inner">
+        <a class="wordmark" href="/" aria-label="AiUntrace 首页"><span class="r-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M15 4.5H8A3.5 3.5 0 0 0 4.5 8v8A3.5 3.5 0 0 0 8 19.5h7"/><path d="M18.5 4.5v.01M18.5 9v.01M18.5 14v.01M18.5 19v.01" stroke-width="2.4" opacity="0.55"/><path d="M21 4.5v.01M21 9v.01" stroke-width="2" opacity="0.28"/><path d="M8 15.5 11 12l2 2.2 1.5-1.7"/></svg></span><span>AiUntrace</span></a>
+        <nav class="actions" aria-label="站点导航"><a class="btn btn-ghost" href="/guides/">使用指南</a></nav>
+      </div>
+    </header>
+    <main class="guide">
+      <div class="wrap">
+        <ol class="crumbs"><li><a href="/">AiUntrace</a></li><li><a href="/guides/">使用指南</a></li><li aria-current="page">如何在 Windows 和 Mac 上清除照片 EXIF 数据</li></ol>
+        <article>
+          <h1>如何在 Windows 和 Mac 上清除照片 EXIF 数据</h1>
+          <p class="lead">Windows 和 macOS 均无需安装额外软件即可移除部分照片元数据。以下是各系统内置工具的具体用法、局限性，以及跨平台通用的彻底清理方法。</p>
+          <h2>Windows：通过文件属性删除个人信息</h2>
+          <ol>
+            <li>右键点击照片文件，选择“属性”。</li>
+            <li>切换到“详细信息”选项卡，点击底部的“删除属性和个人信息”。</li>
+            <li>选择“创建删除了所有可能属性的副本”，或手动勾选要从原文件中删除的属性，点击“确定”。</li>
+          </ol>
+          <p>Windows 会删除其识别到的常规属性，但可能会遗漏它未显示的容器（如 C2PA JUMBF 数据块或部分 XMP 扩展段），敏感照片建议清理后复检。</p>
+          <h2>Mac：在“预览”中移除位置信息</h2>
+          <ol>
+            <li>使用“预览（Preview）”应用打开照片。</li>
+            <li>在顶部菜单选择“工具” → “显示检查器”，切换到“信息（i）”标签页。</li>
+            <li>点击“GPS”子标签，然后点击底部的“移除位置信息”。</li>
+            <li>保存文件。</li>
+          </ol>
+          <p>此操作仅删除 GPS 坐标，相机型号、拍摄时间戳及其他元数据仍保留在文件中。</p>
+          <h2>Mac：从“照片”应用导出时排除位置</h2>
+          <p>在 Mac“照片”应用中，选择“文件” → “导出” → “导出照片”，在导出选项中取消勾选“位置信息”。导出的副本将不含坐标，图库中的原图保持不变。</p>
+          <h2>任意电脑：在浏览器中彻底清除全部元数据</h2>
+          <ol>
+            <li>打开 <a href="/#tool">AiUntrace</a>，拖入 1 张或最多 50 张照片。</li>
+            <li>查看每张文件隐藏的元数据详情。</li>
+            <li>点击“清除元数据”，然后单张下载或打包下载为 ZIP。</li>
+          </ol>
+          <p>AiUntrace 会将图片重新编码为纯像素，因此无论是系统能显示的 EXIF 还是隐藏的 C2PA 容器都会被彻底剥离，且文件全程留在您的电脑本地。</p>
+          <div class="callout"><p><strong>命令行工具补充：</strong>如果您熟悉命令行且已安装 ExifTool，可使用 <code>exiftool -all= photo.jpg</code> 清除所有元数据（添加 <code>-overwrite_original</code> 参数可直接覆盖原文件）。</p></div>
+          <div class="cta"><p><strong>看看您的照片隐藏了什么信息。</strong> AiUntrace 可在浏览器本地列出并清除所有元数据块。</p><a class="btn btn-primary" href="/#tool">立即扫描照片</a></div>
+          <h2>常见问题</h2>
+          <h3>重命名或压缩照片能清除 EXIF 数据吗？</h3><p>重命名不会清除任何元数据。压缩或另存为操作取决于具体软件的实现，操作后请务必通过扫描复检确认。</p>
+          <h3>清除后的 EXIF 数据还能恢复吗？</h3><p>不能。一旦从副本中剥离了元数据，就无法从该副本中还原。如果您自己需要保留拍摄记录，请妥善保存原图，仅分享清理后的副本。</p>
+          <nav class="related" aria-label="相关指南"><h2>延伸阅读</h2><ul><li><a href="/guides/remove-gps-from-photo/">如何清除照片中的 GPS 地理位置</a></li><li><a href="/guides/remove-exif-data-iphone/">如何在 iPhone 上清除照片 EXIF 数据</a></li><li><a href="/guides/remove-exif-data-android/">如何在 Android 手机上清除照片 EXIF 与位置数据</a></li><li><a href="/guides/how-to-view-exif-data/">如何查看照片的 EXIF 元数据</a></li><li><a href="/guides/do-social-media-sites-remove-exif-data/">社交媒体平台会自动清除照片 EXIF 数据吗？</a></li><li><a href="/guides/photo-metadata-privacy-checklist/">照片元数据隐私自查清单</a></li><li><a href="/guides/what-is-exif-data/">什么是 EXIF 数据？</a></li><li><a href="/guides/what-is-c2pa/">什么是 C2PA？内容凭证原理与局限详解</a></li></ul></nav>
+        </article>
+      </div>
+    </main>
+    <script type="module" src="/src/guide.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "id": "/",
+  "name": "AiUntrace — 图片元数据与内容凭证清理工具",
+  "short_name": "AiUntrace",
+  "description": "在浏览器本地查看并清除照片中的 EXIF、GPS 定位及 C2PA 内容凭证。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities",
+    "photo"
+  ],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "orientation": "any"
+}

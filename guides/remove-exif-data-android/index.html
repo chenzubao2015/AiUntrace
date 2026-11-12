@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>如何在 Android 手机上清除照片 EXIF 与位置数据 | AiUntrace</title>
+    <meta name="description" content="清除 Android 照片中的 EXIF 和 GPS 数据：关闭相机位置标签、在相册中移除位置，或在浏览器中彻底清理整个文件。" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#080808" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F7F7F9" media="(prefers-color-scheme: light)" />
+    <script>(function(){try{var s=localStorage.getItem("aiuntrace-theme");var t=s==="light"||s==="dark"?s:window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";if(t==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}})();</script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="AiUntrace" />
+    <meta property="og:title" content="如何在 Android 手机上清除照片 EXIF 与位置数据" />
+    <meta property="og:description" content="清除 Android 照片中的 EXIF 和 GPS 数据：关闭相机位置标签、在相册中移除位置，或在浏览器中彻底清理整个文件。" />
+    <meta property="og:image" content="/thumb.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap inner">
+        <a class="wordmark" href="/" aria-label="AiUntrace 首页"><span class="r-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M15 4.5H8A3.5 3.5 0 0 0 4.5 8v8A3.5 3.5 0 0 0 8 19.5h7"/><path d="M18.5 4.5v.01M18.5 9v.01M18.5 14v.01M18.5 19v.01" stroke-width="2.4" opacity="0.55"/><path d="M21 4.5v.01M21 9v.01" stroke-width="2" opacity="0.28"/><path d="M8 15.5 11 12l2 2.2 1.5-1.7"/></svg></span><span>AiUntrace</span></a>
+        <nav class="actions" aria-label="站点导航"><a class="btn btn-ghost" href="/guides/">使用指南</a></nav>
+      </div>
+    </header>
+    <main class="guide">
+      <div class="wrap">
+        <ol class="crumbs"><li><a href="/">AiUntrace</a></li><li><a href="/guides/">使用指南</a></li><li aria-current="page">如何在 Android 手机上清除照片 EXIF 与位置数据</li></ol>
+        <article>
+          <h1>如何在 Android 手机上清除照片 EXIF 与位置数据</h1>
+          <p class="lead">Android 手机通常会在每张照片中写入 GPS 坐标、设备型号和时间戳。不同厂商的操作步骤略有不同，本指南为您汇总常见方法以及适用于所有手机的通用方案。</p>
+          <h2>停止为新照片添加位置标签</h2>
+          <p>打开相机应用，进入设置并关闭“地理位置标签”或“保存位置信息”。此后新拍摄的照片将不再记录坐标，已有的旧照片不受影响。</p>
+          <h2>从单张照片中移除位置</h2>
+          <ul>
+            <li><strong>Google 相册：</strong>打开照片，向上滑动查看详情，点击位置旁边的编辑按钮并选择“移除位置信息”。</li>
+            <li><strong>系统图库（如三星/小米/华为等）：</strong>打开照片，点击“更多”或“详情”，编辑或抹去位置信息。</li>
+          </ul>
+          <p>上述步骤通常仅移除地理位置，手机型号与拍摄时间仍保留在文件中。</p>
+          <h2>分享时移除位置或隐私信息</h2>
+          <p>许多新版 Android 系统在系统分享面板中提供了“移除位置信息”或“抹去照片属性”的开关。发送前请留意分享界面上的隐私选项；如果没有该选项，建议先清理文件再发送。</p>
+          <h2>使用 AiUntrace 清除全部元数据</h2>
+          <ol>
+            <li>在手机浏览器中打开 <a href="/#tool">AiUntrace</a> 并选择照片。</li>
+            <li>查看检测出的隐藏元数据，点击“清除元数据”。</li>
+            <li>下载清理后的纯净副本并进行分享。</li>
+          </ol>
+          <p>照片绝不会离开您的手机，因为 AiUntrace 没有任何后端服务器。如需清理整个相册，可一次添加最多 50 张照片并打包下载为单个 ZIP。</p>
+          <div class="callout"><p><strong>验证清理效果：</strong>将清理后的副本再次添加到 AiUntrace 中扫描，系统应提示未发现任何元数据。</p></div>
+          <div class="cta"><p><strong>看看您的照片隐藏了什么信息。</strong> AiUntrace 可在浏览器本地列出并清除所有元数据块。</p><a class="btn btn-primary" href="/#tool">立即扫描照片</a></div>
+          <h2>常见问题</h2>
+          <h3>清理会改变照片画质吗？</h3><p>不会改变画面内容。文件经过重新编码后，体积可能会有轻微变化。</p>
+          <h3>聊天软件会自动清除 EXIF 数据吗？</h3><p>以普通压缩图片发送时部分应用会清除，但如果勾选“原图”或以“文件/文档”方式发送，通常会完整保留所有元数据。如果涉及隐私，请务必先自行清理。</p>
+          <nav class="related" aria-label="相关指南"><h2>延伸阅读</h2><ul><li><a href="/guides/remove-gps-from-photo/">如何清除照片中的 GPS 地理位置</a></li><li><a href="/guides/remove-exif-data-iphone/">如何在 iPhone 上清除照片 EXIF 数据</a></li><li><a href="/guides/remove-exif-data-windows-mac/">如何在 Windows 和 Mac 上清除照片 EXIF 数据</a></li><li><a href="/guides/how-to-view-exif-data/">如何查看照片的 EXIF 元数据</a></li><li><a href="/guides/do-social-media-sites-remove-exif-data/">社交媒体平台会自动清除照片 EXIF 数据吗？</a></li><li><a href="/guides/photo-metadata-privacy-checklist/">照片元数据隐私自查清单</a></li><li><a href="/guides/what-is-exif-data/">什么是 EXIF 数据？</a></li><li><a href="/guides/what-is-c2pa/">什么是 C2PA？内容凭证原理与局限详解</a></li></ul></nav>
+        </article>
+      </div>
+    </main>
+    <script type="module" src="/src/guide.js"></script>
+  </body>
+</html>
